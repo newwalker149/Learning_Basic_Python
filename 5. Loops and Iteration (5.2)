@@ -1,0 +1,29 @@
+numm = 0
+tot = 0.0
+minimum = None
+maximum = None
+
+while True:
+    sval = input ('Enter a number: ')
+    if sval == 'done':
+        break
+    try:
+        fval = int(sval)
+    except:
+        print('Invalid input')
+        continue
+    numm = numm + 1
+    tot = tot + fval
+    #if fval > maximum:
+    #    maximum = fval
+    if minimum is None:
+        minimum = fval
+    elif fval < minimum:
+        minimum = fval
+    elif maximum is None:
+        maximum = fval
+    elif fval > maximum:
+        maximum = fval
+
+print('Maximum is', maximum)
+print('Minimum is', minimum)
