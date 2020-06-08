@@ -1,0 +1,10 @@
+xh = input('Enter Hours: ')
+xr = input('Enter Rate: ')
+xh1 = float(xh)
+xr1 = float(xr)
+xp = xh1 * xr1
+xpo = (xp + ((xh1 - 40) * (xr1*0.5)))
+if xh1 > 40:
+    print('Over workign Pay', xpo)
+else:
+    print('Pay:', xp)
