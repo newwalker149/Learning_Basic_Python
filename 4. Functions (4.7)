@@ -1,0 +1,19 @@
+score = input('Enter score: ')
+realscore = float(score)
+
+def computegrade(score):
+        if realscore > 1.0:
+            print('Bad score')
+        elif realscore >= 0.9:
+            print('A')
+        elif realscore >= 0.8:
+            print('B')
+        elif realscore >= 0.7:
+            print('C')
+        elif realscore >= 0.6:
+            print('D')
+        elif realscore < 0.6:
+            print('F')
+        
+
+computegrade(realscore)
