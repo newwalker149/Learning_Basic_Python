@@ -1,0 +1,9 @@
+xh = input('Enter Hours: ')
+xr = input('Enter Rate: ')
+try:
+    xh1 = float(xh)
+    xr1 = float(xr)
+    xp = xh1*xr1
+    print('Pay:', xp)
+except:
+    print('Error, please enter numeric input')
