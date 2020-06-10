@@ -1,0 +1,15 @@
+text = "X-DSPAM-Confidence:    0.8475";
+print(text)
+
+number = text.find(':')
+print(number)
+
+data = text[19 : ]
+print(data)
+
+xy = data.strip()
+
+print(xy)
+
+number1 = float(xy)
+print(number1)
