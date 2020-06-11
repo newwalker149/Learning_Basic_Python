@@ -1,0 +1,5 @@
+print('python shout.py')
+fname = input('Enter a file name: ')
+fhand = open(fname)
+fread = fhand.read()
+print(fread.upper())
