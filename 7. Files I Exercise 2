@@ -1,0 +1,12 @@
+filename = input('Enter a file name: ')
+fhand = open(filename)
+count = 0
+total_confidence = 0
+for line in fhand:
+    line = line.strip()
+    if line.startswith('X-DSPAM-Confidence:'):
+        space_index = line.find(' ')
+        number = float(line[space_index:])
+        total_confidence += number
+        count += 1
+print('Average spam confidence:', total_confidence/count)
